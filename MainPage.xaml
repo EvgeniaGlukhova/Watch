@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Watch.MainPage">
+
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" /> <!--ширина будет меняться в соотвествии с содержимым -->
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            
+        </Grid.ColumnDefinitions>
+
+        <!-- Первая часы  -->
+        <Grid x:Name="DigitGrid1" Grid.Column="0" Margin="0,0,10,0">
+            <!-- Отступ справа для разделения -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Top -->
+            <Rectangle x:Name="TopSegment1" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Left -->
+            <Rectangle x:Name="TopLeftSegment1" Grid.Row="1" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Right -->
+            <Rectangle x:Name="TopRightSegment1" Grid.Row="1" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Middle -->
+            <Rectangle x:Name="MiddleSegment1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Left -->
+            <Rectangle x:Name="BottomLeftSegment1" Grid.Row="3" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Right -->
+            <Rectangle x:Name="BottomRightSegment1" Grid.Row="3" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom -->
+            <Rectangle x:Name="BottomSegment1" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+        </Grid>
+
+        <!-- Вторая часы -->
+        <Grid x:Name="DigitGrid2" Grid.Column="1" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Top -->
+            <Rectangle x:Name="TopSegment2" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Left -->
+            <Rectangle x:Name="TopLeftSegment2" Grid.Row="1" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Right -->
+            <Rectangle x:Name="TopRightSegment2" Grid.Row="1" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Middle -->
+            <Rectangle x:Name="MiddleSegment2" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Left -->
+            <Rectangle x:Name="BottomLeftSegment2" Grid.Row="3" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Right -->
+            <Rectangle x:Name="BottomRightSegment2" Grid.Row="3" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom -->
+            <Rectangle x:Name="BottomSegment2" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+        </Grid>
+
+        <!-- Двоеточие -->
+        <Grid Grid.Column="2" VerticalOptions="Center" Margin="0,-25,10,0">
+           
+            <Rectangle BackgroundColor="black" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" />
+            <Rectangle BackgroundColor="black" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" Margin="0,50,0,0" />
+            
+        </Grid>
+
+        <!-- Первая минута  -->
+        <Grid x:Name="DigitGrid3" Grid.Column="3" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Top -->
+            <Rectangle x:Name="TopSegment3" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Left -->
+            <Rectangle x:Name="TopLeftSegment3" Grid.Row="1" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Right -->
+            <Rectangle x:Name="TopRightSegment3" Grid.Row="1" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Middle -->
+            <Rectangle x:Name="MiddleSegment3" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Left -->
+            <Rectangle x:Name="BottomLeftSegment3" Grid.Row="3" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Right -->
+            <Rectangle x:Name="BottomRightSegment3" Grid.Row="3" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom -->
+            <Rectangle x:Name="BottomSegment3" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+        </Grid>
+
+        <!-- Вторая минута -->
+        <Grid x:Name="DigitGrid4" Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Top -->
+            <Rectangle x:Name="TopSegment4" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" Opacity="1.0" />
+            <!-- Top Left -->
+            <Rectangle x:Name="TopLeftSegment4" Grid.Row="1" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" Opacity="1.0" />
+            <!-- Top Right -->
+            <Rectangle x:Name="TopRightSegment4" Grid.Row="1" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" Opacity="1.0" />
+            <!-- Middle -->
+            <Rectangle x:Name="MiddleSegment4" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" Opacity="1.0" />
+            <!-- Bottom Left -->
+            <Rectangle x:Name="BottomLeftSegment4" Grid.Row="3" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" Opacity="1.0" />
+            <!-- Bottom Right -->
+            <Rectangle x:Name="BottomRightSegment4" Grid.Row="3" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" Opacity="1.0" />
+            <!-- Bottom -->
+            <Rectangle x:Name="BottomSegment4" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" Opacity="1.0"/>
+        </Grid>
+
+        <!-- Двоеточие -->
+        <Grid Grid.Column="5" VerticalOptions="Center" Margin="10,-25,10,0">
+            
+            <Rectangle BackgroundColor="black" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" />
+            <Rectangle BackgroundColor="black" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" Margin="0,50,0,0" />
+            
+        </Grid>
+
+
+        <!-- Первая секунда   -->
+        <Grid x:Name="DigitGrid5" Grid.Column="6" Margin="0,0,10,0">
+            <!-- Отступ справа для разделения -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Top -->
+            <Rectangle x:Name="TopSegment5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Left -->
+            <Rectangle x:Name="TopLeftSegment5" Grid.Row="1" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Right -->
+            <Rectangle x:Name="TopRightSegment5" Grid.Row="1" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Middle -->
+            <Rectangle x:Name="MiddleSegment5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Left -->
+            <Rectangle x:Name="BottomLeftSegment5" Grid.Row="3" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Right -->
+            <Rectangle x:Name="BottomRightSegment5" Grid.Row="3" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom -->
+            <Rectangle x:Name="BottomSegment5" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+        </Grid>
+
+        <!-- Вторая секунда  -->
+        <Grid x:Name="DigitGrid6" Grid.Column="7" Margin="0,0,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Top -->
+            <Rectangle x:Name="TopSegment6" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Left -->
+            <Rectangle x:Name="TopLeftSegment6" Grid.Row="1" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Top Right -->
+            <Rectangle x:Name="TopRightSegment6" Grid.Row="1" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Middle -->
+            <Rectangle x:Name="MiddleSegment6" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Left -->
+            <Rectangle x:Name="BottomLeftSegment6" Grid.Row="3" Grid.Column="0" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom Right -->
+            <Rectangle x:Name="BottomRightSegment6" Grid.Row="3" Grid.Column="2" BackgroundColor="black" StrokeThickness="10" />
+            <!-- Bottom -->
+            <Rectangle x:Name="BottomSegment6" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="black" StrokeThickness="10" />
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
